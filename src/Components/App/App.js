@@ -7,7 +7,19 @@ import Playlist from '../Playlist';
 class App extends React.Component() {
   constructor(props){
     super(props)
-    this.state.searchResults = []
+    this.state.searchResults = [{
+      name:"",
+      artist:"",
+      album:"",
+      id:"",
+    }]
+    this.state.playlistName = ""
+    this.state.playlistTracks = [{
+      name:"",
+      artist:"",
+      album:"",
+      id:"",
+    }]
   }
   render() {
     return (
@@ -17,7 +29,7 @@ class App extends React.Component() {
           <SearchBar />
           <div className="App-playlist">
             <SearchResults searchResults={this.state.SearchResults} />
-            <Playlist />
+            <Playlist playlistName={this.state.playlistName} playlistTracks={this.state.playlistTracks} />
           </div>
         </div>
       </div>
