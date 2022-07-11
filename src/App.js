@@ -1,8 +1,8 @@
 import './App.css';
 import React from 'react';
-import SearchBar from '../SearchBar';
-import SearchResults from '../SearchResults';
-import Playlist from '../Playlist';
+import SearchBar from './components/SearchBar/SearchBar';
+import SearchResults from './components/SearchResults/SearchResults';
+import Playlist from './components/Playlist/Playlist';
 
 class App extends React.Component() {
   constructor(props){

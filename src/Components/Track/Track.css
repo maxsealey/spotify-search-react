@@ -12,10 +12,9 @@
     border: 0px;
     background-color: rgba(0, 0, 0, 0);
     color: #fff;
-  }
-  
-  .Track-action:hover {
-    color: rgba(265, 265, 265, .5);
+    &:hover {
+      color: rgba(265, 265, 265, .5);
+    }
   }
   
   .Track-information {
